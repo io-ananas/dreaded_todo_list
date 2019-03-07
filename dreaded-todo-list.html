@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="dreaded-todo-list.css" />
+    <title>Dreaded Todo List</title>
+  </head>
+  <body>
+    <header>The Dreaded Todo List</header>
+
+    <form action="">
+      <fieldset>
+        <legend>Add a New Task</legend>
+
+        <span> Description of the Task</span>
+        <label class="space" for="descritpion">
+          <input type="text" name="descritpion" placeholder="Description"
+        /></label>
+
+        <span>Category</span>
+        <label class="space" for="category" required>
+          <select required name="category" id="category">
+            <option value="">-Please choose a category-</option>
+            <option value="cooking">Cooking</option>
+            <option value="family">Family</option>
+            <option value="friends">Friends</option>
+            <option value="house">House</option>
+            <option value="school">School</option>
+            <option value="shopping">Shopping</option>
+            <option value="sparetime">Spare Time</option>
+            <option value="work">Work</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+
+        <span> Importance</span
+        ><label class="space">
+          <label for="high"
+            ><input
+              type="radio"
+              name="importance"
+              id="high"
+              value="high"
+            />High</label
+          >
+          <label for="medium"
+            ><input
+              type="radio"
+              name="importance"
+              id="medium"
+              value="medium"
+            />Medium</label
+          >
+          <label for="low"
+            ><input
+              type="radio"
+              name="importance"
+              id="low"
+              value="low"
+            />Low</label
+          ></label
+        >
+
+        <span> For when?</span>
+        <label class="space" for="date"><input type="date" name="date"/></label>
+
+        <input type="submit" name="submit" value="Add New Task" />
+      </fieldset>
+    </form>
+
+    <script src="dreaded-todo-list.js"></script>
+  </body>
+</html>
