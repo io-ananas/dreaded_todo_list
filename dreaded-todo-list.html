@@ -16,11 +16,15 @@
 
         <span> Description of the Task</span>
         <label class="space" for="descritpion">
-          <input type="text" name="descritpion" placeholder="Description"
+          <input
+            type="text"
+            name="description"
+            placeholder="Description"
+            required
         /></label>
 
         <span>Category</span>
-        <label class="space" for="category" required>
+        <label class="space" for="category">
           <select required name="category" id="category">
             <option value="">-Please choose a category-</option>
             <option value="cooking">Cooking</option>
@@ -63,12 +67,24 @@
           ></label
         >
 
-        <span> For when?</span>
+        <span> For When?</span>
         <label class="space" for="date"><input type="date" name="date"/></label>
 
         <input type="submit" name="submit" value="Add New Task" />
       </fieldset>
     </form>
+
+    <main></main>
+
+    <template>
+      <article>
+        <h1>-Description of the Task-</h1>
+        <h2>-Category-</h2>
+        <p class="importance"></p>
+        <p class="forwhen">By</p>
+        <button class="done">Done</button>
+      </article>
+    </template>
 
     <script src="dreaded-todo-list.js"></script>
   </body>
