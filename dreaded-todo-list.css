@@ -1,16 +1,19 @@
+/* <i class="fas fa-thumbtack"></i> */
+/* font-family: 'Caveat', cursive; */
+
 body {
   font-family: Arial, Helvetica, sans-serif;
-}
-
-header {
-  font-weight: bold;
-  font-size: 1.5em;
-  margin: 1em;
+  /* background-color: rgb(33, 197, 156); */
 }
 
 fieldset {
   margin: 1em;
   padding: 2em;
+  background-color: white;
+  top: 5em;
+  width: 33%;
+  box-shadow: inset 0 0 10px #000000;
+  border: 0px;
 }
 
 label {
@@ -31,10 +34,97 @@ span {
   font-weight: bold;
 }
 
+header {
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+h1,
+h2 {
+  font-family: "Gloria Hallelujah", cursive;
+}
+
 h1 {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 h2 {
   font-size: 0.8em;
+}
+
+article {
+  margin: 0.5em;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  background-color: pink;
+}
+
+.fas {
+  position: relative;
+  left: 95%;
+  margin: 0;
+  padding: 0;
+  transform: rotate(35deg);
+}
+
+/* Big screens */
+
+@media (min-width: 600px) and (max-width: 2000px) {
+  .wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .wrap-form {
+    display: grid;
+    background-color: rgb(33, 197, 156);
+  }
+
+  .wrap-template {
+    display: grid;
+    background-color: white;
+    margin: 1em;
+  }
+  fieldset {
+    position: fixed;
+    top: 5em;
+    width: 33%;
+  }
+  header {
+    position: fixed;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 1em;
+  }
+}
+
+/* Small screens */
+@media screen and (max-width: 600px) {
+  .wrap {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "one" "two";
+  }
+
+  .wrap-form {
+    display: grid;
+    grid-area: "one";
+    background-color: rgb(33, 197, 156);
+  }
+
+  .wrap-template {
+    display: grid;
+    grid-area: "two";
+    background-color: white;
+    margin: 1em;
+  }
+  fieldset {
+    top: 5em;
+    width: auto;
+  }
+  header {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 1em;
+    background-color: rgb(33, 197, 156);
+  }
 }
