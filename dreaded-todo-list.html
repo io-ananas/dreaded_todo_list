@@ -26,7 +26,7 @@
           <fieldset>
             <legend>Add a New Task</legend>
 
-            <span> Description of the Task</span>
+            <span> Description of the Task *</span>
             <label class="space" for="descritpion">
               <input
                 type="text"
@@ -35,7 +35,7 @@
                 required
             /></label>
 
-            <span>Category</span>
+            <span>Category *</span>
             <label class="space" for="category">
               <select required name="category" id="category">
                 <option value="">-Please choose a category-</option>
@@ -85,6 +85,8 @@
             /></label>
 
             <input type="submit" name="submit" value="Add New Task" />
+
+            <div class="footer-reqfields">* Required fields</div>
           </fieldset>
         </form>
       </div>
@@ -100,7 +102,7 @@
         <h2>-Category-</h2>
         <p class="importance"></p>
         <p class="forwhen">By</p>
-        <button class="done">Done</button>
+        <button class="done">Done ✓</button>
       </article>
     </template>
 
