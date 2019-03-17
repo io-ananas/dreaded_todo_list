@@ -80,5 +80,5 @@ form.addEventListener("submit", e => {
     importance: form.elements.importance.value,
     date: form.elements.date.value
   };
-  post(payload);
+  post(payload); // called payload because of airplane dropping stuff
 });
